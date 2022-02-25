@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passwords Storage App</title>
+        <!-- Font Awesome -->
+        <script defer="" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:wght@400;700&family=Montserrat:wght@100;400;700;900&family=Muli:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="inner-container">
+                <h1>Password Storage App</h1>
+                <button class="btn btn-clear">Clear</button>
+            </div>
+        </nav>
+        <main>
+            <section class="main-content">
+                <div class="inner-container">
+                    <h2>Save all your passwords in one place.</h2>
+                    <form>
+                        <div class="form-control">
+                            <div class="form-group">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" placeholder="Enter site address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="text" id="password" placeholder="Enter your password" />
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-add">Add</button>
+                            <button class="btn btn-delete">Delete</button>
+                            <button class="btn btn-update">Update</button>
+                            <button class="btn btn-cancel">Cancel</button>
+                        </div>
+                    </form>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Website</td>
+                                <td>Password</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="inner-container">
+                &copy; Password Storage App 2022
+            </div>
+        </footer>
+
+
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
